@@ -1,0 +1,37 @@
+.language-widget{position:fixed;inset-inline-end:22px;bottom:22px;z-index:30;font-size:13px}
+.language-toggle{display:flex;align-items:center;gap:9px;min-height:46px;padding:11px 17px;border:1px solid #688258;border-radius:24px;background:#1c2a1c;color:var(--accent);box-shadow:0 5px 24px #0006}
+.language-toggle>span{font-size:24px;line-height:1}
+#language-panel{position:absolute;bottom:58px;inset-inline-end:0;width:280px;max-width:calc(100vw - 32px);padding:19px;border:1px solid #526449;border-radius:12px;background:#141e16;box-shadow:0 14px 40px #0008}
+.language-heading{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.language-heading strong{font-size:15px;font-weight:500}
+.language-close{min-width:36px;min-height:36px;border:1px solid var(--line);border-radius:6px}
+#language-panel p{color:var(--muted);font-size:12px;margin:10px 0 17px}
+.language-options{display:flex;gap:10px}
+.language-options a{flex:1;text-align:center;padding:10px;border:1px solid #42553a;border-radius:6px;min-height:44px}
+.language-options a[aria-current=true]{background:var(--accent);color:#152010;border-color:var(--accent)}
+.language-options a:hover{outline:1px solid var(--accent)}
+.footer{padding-bottom:90px}
+.hero-social,.contact-social{flex-wrap:wrap}
+[dir=rtl] body{font-family:Arial,'Segoe UI',sans-serif}
+[dir=rtl] h1,[dir=rtl] h2,[dir=rtl] h3,[dir=rtl] .contact h2{letter-spacing:0}
+[dir=rtl] .eyebrow,[dir=rtl] .hero-name,[dir=rtl] .award-label,[dir=rtl] .hero-footer,[dir=rtl] .art-caption{letter-spacing:.3px;font-family:Arial,'Segoe UI',sans-serif}
+[dir=rtl] .hero-name{font-size:15px}
+[dir=rtl] .hero-copy h1{line-height:1.12}
+[dir=rtl] .card-body h3 button,[dir=rtl] .stack-items button{text-align:right}
+[dir=rtl] .card-links a{margin-left:0;margin-right:auto}
+[dir=rtl] .card-links button span{margin-left:0;margin-right:10px}
+[dir=rtl] .nav-contact span{margin-left:0;margin-right:16px}
+[dir=rtl] .hero-actions .text-link{margin-left:0;margin-right:7px}
+[dir=rtl] .hero-footer a span{margin-left:0;margin-right:20px}
+[dir=rtl] .filters button span{margin-left:0;margin-right:10px}
+[dir=rtl] .about-signature span{margin-left:0;margin-right:20px}
+[dir=rtl] .github-stats>div{border-left:0;border-right:1px solid var(--line);padding-left:0;padding-right:30px}
+[dir=rtl] dialog ul{padding-left:0;padding-right:20px}
+.brand,.tags span,.email-address,.github-section>div>p{direction:ltr;unicode-bidi:isolate}
+.flow>span:not(.flow-arrow){unicode-bidi:plaintext}
+[dir=rtl] .system-art{direction:ltr}
+[dir=rtl] .layer small,[dir=rtl] .layer strong{direction:rtl;text-align:right;display:block}
+[dir=rtl] .art-caption,[dir=rtl] .art-bottom{font-family:Arial,'Segoe UI',sans-serif;letter-spacing:0;font-size:10px}
+[dir=rtl] .winner-stamp span{letter-spacing:0;font-family:Arial,'Segoe UI',sans-serif}
+@media(max-width:800px){[dir=rtl] .github-stats>div{border-right:0;padding-right:0}[dir=rtl] .hero-actions .text-link{margin-right:0}}
+@media(max-width:600px){.language-widget{inset-inline-end:16px;bottom:16px}.language-toggle{font-size:12px;padding:9px 14px}[dir=rtl] .menu-toggle{margin-left:0;margin-right:auto}[dir=rtl] .hero-actions .text-link{margin-right:5px}[dir=rtl] .github-stats>div{padding-right:20px;border-right:1px solid var(--line)}[dir=rtl] .system-art{margin-inline:auto}[dir=rtl] .hero-copy h1{font-size:clamp(56px,14vw,74px)}}
