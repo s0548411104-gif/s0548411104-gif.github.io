@@ -1,5 +1,5 @@
 import { mkdir, writeFile, copyFile } from 'node:fs/promises';
-import { profile, projects, stack } from '../src/data.mjs';
+import { profile, projects, stack, additionalLiveProjects } from '../src/data.mjs';
 import { translateText } from '../src/he.mjs';
 export const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const github = `https://github.com/${profile.username}`;
@@ -10,7 +10,7 @@ const diagram = p => `<div class="flow">${p.architecture.map((step,i) => `${i ? 
 const card = (p,i) => `<article class="project-card" data-categories="${p.filters.join(',')}">
   <button class="project-art art-${p.id}" data-project="${p.id}" aria-label="View ${escape(p.name)} details"><span class="art-caption">${escape(p.label)}</span><span class="art-index">0${i+1}</span>${diagram(p)}<span class="art-bottom">${escape(p.category)}<span>↗</span></span></button>
   <div class="card-body"><div class="project-meta">${escape(p.category)}<span>0${i+1}</span></div><h3><button data-project="${p.id}">${escape(p.name)} <span>↗</span></button></h3><p>${escape(p.description)}</p>${tags(p.technologies.slice(0,5))}<div class="card-links"><button data-project="${p.id}">View details <span>→</span></button><a href="${github}/${p.repo}" ${ext}>GitHub ↗</a>${p.demo ? `<a href="${escape(p.demo)}" ${ext}>Live demo ↗</a>`:''}</div></div></article>`;
-const live = projects.filter(p => p.demo);
+const live = [...projects.filter(p => p.demo), ...additionalLiveProjects];
 const social = `<a href="${github}" ${ext}>GitHub ↗</a>${profile.linkedin ? `<a href="${escape(profile.linkedin)}" ${ext}>LinkedIn ↗</a>` : ''}<a href="mailto:${profile.email}">Email ↗</a><a href="tel:${profile.phoneHref}" aria-label="${profile.phone}"><bdi dir="ltr">${profile.phone}</bdi></a>`;
 const html = `<!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0c100e"><title>Shulamit Katzenbogen | Full Stack & AI Developer</title><meta name="description" content="Shulamit Katzenbogen — Full Stack & AI Developer. Explore real projects in generative AI, RAG, backend engineering and automation."><meta property="og:type" content="website"><meta property="og:title" content="Shulamit Katzenbogen | Full Stack & AI Developer"><meta property="og:description" content="Building intelligent software with code, AI & automation. Explore selected engineering projects."><meta property="og:url" content="${profile.site}/"><meta property="og:image" content="${profile.site}/social-card.svg"><meta name="twitter:card" content="summary"><link rel="canonical" href="${profile.site}/"><link rel="icon" href="./favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./styles.css"><script src="./app.js" defer></script></head>

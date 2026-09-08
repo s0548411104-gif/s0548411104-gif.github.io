@@ -56,7 +56,7 @@ git push -u origin main
 6. לאחר שהריצה מסתיימת בהצלחה, פתחי https://s0548411104-gif.github.io/.
 7. כל push נוסף ל־`main` יבנה, יבדוק ויפרסם את האתר אוטומטית.
 
-ה־workflow מעלה רק את `dist/`, ללא קובצי מחקר או קוד של שרת הפיתוח. האתר עצמו אינו דורש backend. הפרסום המרוחק טרם בוצע בסביבת העבודה הזו.
+ה־workflow מעלה רק את `dist/`, ללא קובצי מחקר או קוד של שרת הפיתוח. האתר עצמו אינו דורש backend. האתר פורסם ב־https://s0548411104-gif.github.io/ וכולל באזור Live Projects קישורים ל־Angular Task Manager, ל־ToDo, ל־Country Finder ולתרגיל HTML. מצב הפרסום של כל המאגרים מתועד ב־DEPLOYMENT-PLAN.md.
 
 תיעוד רשמי: https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
 
