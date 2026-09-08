@@ -36,10 +36,7 @@ export const hebrew = {
 Object.assign(hebrew, {
   'Country Finder': 'מדריך המדינות',
   'A Flutter app for searching country information, including capitals, languages, currencies, population and flags.': 'יישום Flutter לחיפוש מידע על מדינות: ערי בירה, שפות, מטבעות, אוכלוסייה ודגלים.',
-  'Country information': 'מידע על מדינות',
-  'HTML & Git Practice': 'תרגול HTML ו־Git',
-  'An introductory HTML exercise with three original pages and a navigation page.': 'תרגיל היכרות עם HTML הכולל שלושה עמודים מקוריים ועמוד ניווט.',
-  'HTML pages': 'עמודי HTML'
+  'Country information': 'מידע על מדינות'
 });
 hebrew['TEAM TASK MANAGEMENT'] = 'ניהול משימות בצוות';
 const translations = [

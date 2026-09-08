@@ -42,3 +42,8 @@ Localhost endpoints are not shown as live demos. The Angular frontend URL suppli
 - Rechecked the ToDo frontend and its `/tasks` API: both returned HTTP 200; the API returned JSON. No user data was created, changed or deleted.
 - The browser runtime reported no available browsers. Verification uses source inspection, build/tests, GitHub deployment records and the HTTP checks documented above.
 - The other projects' current deployment blockers are recorded in DEPLOYMENT-PLAN.md. Source checkouts and diagnostic logs remain under ignored `research/` and are not included in the portfolio artifact.
+
+## Owner correction — 2026-09-08
+
+The owner clarified that Angular was already live and that lesson-git is a lesson to remove. Restored the Angular portfolio link to https://task-manager-8wxa.onrender.com/login. Removed lesson-git from Live Projects, unpublished its GitHub Pages site and disabled its deployment workflow; the repository and lesson source remain intact. The earlier publication entries above are historical, not the current status.
+

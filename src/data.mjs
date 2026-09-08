@@ -91,7 +91,7 @@ export const projects = [
     architecture: ['Angular routes + components', 'Signals + task services', 'External REST API'],
     architectureNote: 'The repository contains the Angular frontend. The task board uses Angular CDK drag-and-drop and Reactive Forms; the backend is external.',
     sources: ['src/app/app.routes.ts', 'src/app/components/task-board/task-board.ts', 'src/environments/environment.ts'],
-    demo: 'https://s0548411104-gif.github.io/task-manager-angular/#/login'
+    demo: 'https://task-manager-8wxa.onrender.com/login'
   }
 ];
 
@@ -102,13 +102,6 @@ export const additionalLiveProjects = [
     architecture: ['Flutter Web', 'REST Countries API', 'Country information'],
     technologies: ['Flutter', 'Dart', 'REST API'],
     demo: 'https://s0548411104-gif.github.io/Flutter-Project/'
-  },
-  {
-    name: 'HTML & Git Practice',
-    description: 'An introductory HTML exercise with three original pages and a navigation page.',
-    architecture: ['HTML pages', 'GitHub Pages'],
-    technologies: ['HTML', 'Git'],
-    demo: 'https://s0548411104-gif.github.io/lesson-git/'
   }
 ];
 
