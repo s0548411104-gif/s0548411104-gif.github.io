@@ -9,7 +9,7 @@ export const profile = {
 // Demo URLs refer to frontend applications; record availability checks in CONTENT-SOURCES.md.
 export const projects = [
   {
-    id: 'directvision', name: 'DirectVision', repo: 'Direct_Insurance_Hackathon', category: 'AI & Full Stack', filters: ['AI', 'Full Stack'], label: 'HACKATHON PROJECT',
+    id: 'directvision', purpose: 'Verify properties with AI', name: 'DirectVision', repo: 'Direct_Insurance_Hackathon', category: 'AI & Full Stack', filters: ['AI', 'Full Stack'], label: 'HACKATHON PROJECT',
     description: 'AI-powered property verification. From a smartphone photo to an informed underwriting decision.',
     technologies: ['React', 'TypeScript', 'Node.js', 'FastAPI', 'Gemini', 'Claude', 'MongoDB', 'Cloudinary', 'Socket.io'],
     overview: 'An insurance underwriting platform connecting property photo capture, AI analysis and a real-time underwriter dashboard.',
@@ -21,7 +21,7 @@ export const projects = [
     sources: ['server/server.js', 'ai/main.py', 'README.md'], demo: null
   },
   {
-    id: 'agentic-rag', name: 'Agentic Docs RAG', repo: 'agentic-coding-rag', category: 'AI & Knowledge Systems', filters: ['AI'], label: 'EVENT-DRIVEN ARCHITECTURE',
+    id: 'agentic-rag', purpose: 'Find answers in development docs', name: 'Agentic Docs RAG', repo: 'agentic-coding-rag', category: 'AI & Knowledge Systems', filters: ['AI'], label: 'EVENT-DRIVEN ARCHITECTURE',
     description: 'Turning scattered development documentation into a searchable, context-aware knowledge system.',
     technologies: ['Python', 'LlamaIndex', 'Cohere', 'Pinecone', 'Pydantic', 'Gradio'],
     overview: 'An event-driven knowledge router for documentation produced while working with AI coding tools.',
@@ -33,7 +33,7 @@ export const projects = [
     sources: ['workflow_chat.py', 'extract_data.py', 'README.md'], demo: null
   },
   {
-    id: 'helpdesk', name: 'Helpdesk', repo: 'HelpDesk-proj-react', category: 'Frontend & API Integration', filters: ['Full Stack'], label: 'ROLE-AWARE WORKFLOWS',
+    id: 'helpdesk', purpose: 'Manage customer support requests', name: 'Helpdesk', repo: 'HelpDesk-proj-react', category: 'Frontend & API Integration', filters: ['Full Stack'], label: 'ROLE-AWARE WORKFLOWS',
     description: 'A support workspace with ticket management, threaded conversations and role-aware interfaces.',
     technologies: ['React', 'TypeScript', 'React Router', 'Axios', 'CSS'],
     overview: 'A React and TypeScript helpdesk frontend for users, support agents and administrators.',
@@ -45,7 +45,7 @@ export const projects = [
     sources: ['src/services/api.service.ts', 'src/context/AuthContext.tsx', 'README.md'], demo: null
   },
   {
-    id: 'todo', name: 'Fullstack ToDo', repo: 'ToDoList-Fullstack', category: 'Full Stack & Backend', filters: ['Full Stack'], label: 'END-TO-END DEVELOPMENT',
+    id: 'todo', purpose: 'Organize everyday tasks', name: 'Fullstack ToDo', repo: 'ToDoList-Fullstack', category: 'Full Stack & Backend', filters: ['Full Stack'], label: 'END-TO-END DEVELOPMENT',
     description: 'A focused task application connecting a React interface to a .NET Minimal API and MySQL.',
     technologies: ['React', 'C#', '.NET', 'Entity Framework Core', 'MySQL', 'Docker'],
     overview: 'A full-stack task management application with a React client and a relational database-backed API.',
@@ -57,7 +57,7 @@ export const projects = [
     sources: ['TodoApi/Program.cs', 'TodoApi/Dockerfile', 'README.md'], demo: 'https://todolist-fullstack2.onrender.com'
   },
   {
-    id: 'weather-mcp', name: 'Weather MCP', repo: 'MCP-Playwright-AI', category: 'AI & Automation', filters: ['AI', 'Automation'], label: 'TOOL-USING AI',
+    id: 'weather-mcp', purpose: 'Get weather information through AI', name: 'Weather MCP', repo: 'MCP-Playwright-AI', category: 'AI & Automation', filters: ['AI', 'Automation'], label: 'TOOL-USING AI',
     description: 'Connecting conversational AI to browser automation through the Model Context Protocol.',
     technologies: ['Python', 'MCP', 'Playwright', 'Gemini'],
     overview: 'A Gemini-powered chat host that discovers and calls tools exposed by weather MCP servers.',
@@ -69,7 +69,7 @@ export const projects = [
     sources: ['host.py', 'weather_Israel.py', 'README.md'], demo: null
   },
   {
-    id: 'outlook', name: 'Outlook Drafts Helper', repo: 'outlook-helper', category: 'Backend & Automation', filters: ['Automation'], label: 'WORKFLOW AUTOMATION',
+    id: 'outlook', purpose: 'Prepare Outlook email drafts', name: 'Outlook Drafts Helper', repo: 'outlook-helper', category: 'Backend & Automation', filters: ['Automation'], label: 'WORKFLOW AUTOMATION',
     description: 'Bridging a web form and desktop Outlook to prepare individual email drafts with attachments.',
     technologies: ['Python', 'Flask', 'JavaScript', 'HTML', 'CSS', 'pywin32'],
     overview: 'A local Windows utility that prepares Outlook drafts from a web interface for recruitment workflows.',
@@ -81,7 +81,7 @@ export const projects = [
     sources: ['README.md'], demo: null
   },
   {
-    id: 'angular-tasks', name: 'Angular Task Manager', repo: 'task-manager-angular', category: 'Frontend & API Integration', filters: ['Full Stack'], label: 'TEAM TASK MANAGEMENT',
+    id: 'angular-tasks', purpose: 'Coordinate team projects and tasks', name: 'Angular Task Manager', repo: 'task-manager-angular', category: 'Frontend & API Integration', filters: ['Full Stack'], label: 'TEAM TASK MANAGEMENT',
     description: 'A team workspace with project task boards, drag-and-drop status changes and task conversations.',
     technologies: ['Angular', 'TypeScript', 'Angular CDK', 'Signals', 'Reactive Forms'],
     overview: 'An Angular frontend with login, registration, teams, projects and task boards connected to an external API.',

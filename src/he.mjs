@@ -2,6 +2,13 @@ import { projects } from './data.mjs';
 
 // Project and technology names remain in their original language.
 export const hebrew = {
+  'Verify properties with AI':'אימות נכסים בעזרת בינה מלאכותית',
+  'Find answers in development docs':'מציאת תשובות בתיעוד פיתוח',
+  'Manage customer support requests':'ניהול פניות לתמיכה ושירות',
+  'Organize everyday tasks':'ארגון ומעקב אחר משימות יומיומיות',
+  'Get weather information through AI':'קבלת מידע על מזג האוויר בעזרת AI',
+  'Prepare Outlook email drafts':'הכנת טיוטות מייל ב־Outlook',
+  'Coordinate team projects and tasks':'ניהול פרויקטים ומשימות בצוות',
   'Skip to content':'דילוג לתוכן', 'Home':'בית', 'About':'אודות', 'Tech stack':'טכנולוגיות', 'Projects':'פרויקטים', 'Achievements':'הישגים', 'Contact':'יצירת קשר', 'Let’s talk':'בואו נדבר',
   'FULL STACK & AI DEVELOPER':'מפתחת Full Stack ו־AI', 'SHULAMIT KATZENBOGEN':'שולמית קצנבוגן', 'Shulamit Katzenbogen':'שולמית קצנבוגן',
   'Building':'בונה', 'intelligent':'תוכנה', 'software.':'חכמה.',

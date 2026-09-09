@@ -47,3 +47,11 @@ Localhost endpoints are not shown as live demos. The Angular frontend URL suppli
 
 The owner clarified that Angular was already live and that lesson-git is a lesson to remove. Restored the Angular portfolio link to https://task-manager-8wxa.onrender.com/login. Removed lesson-git from Live Projects, unpublished its GitHub Pages site and disabled its deployment workflow; the repository and lesson source remain intact. The earlier publication entries above are historical, not the current status.
 
+## Helpdesk server supplied and deployment prepared
+
+The owner supplied https://github.com/s0548411104-gif/HelpDesk-react-server and explicitly selected a free demo with temporary data. Source inspection confirms Express, TypeScript and SQLite (not the MySQL mentioned in the frontend README). The server initializes its own database, so no separate MySQL service is needed.
+
+Prepared and pushed frontend commit 2431d8a and server commit 7fd910b. The Render Blueprint creates a free Node service and a static frontend, shares the API's public hostname through RENDER_EXTERNAL_HOSTNAME, enables sample accounts and generates a JWT secret. The frontend shows a shared/temporary-data notice. Replaced plaintext password authentication and credential logs with bcrypt hashing, preserved legacy records through a startup migration, and fixed TypeScript JSON imports. Server and client builds passed locally; two server integration tests passed with an isolated temporary SQLite database.
+
+Render deployment is still pending account access. No Helpdesk URL is presented as live and no cloud service was claimed to have been created. Launch configuration: https://github.com/s0548411104-gif/HelpDesk-react-server/blob/main/render.yaml. Hosting limits verified against https://render.com/docs/free; the selected free SQLite demo loses changes on restarts/redeploys/idle shutdowns.
+

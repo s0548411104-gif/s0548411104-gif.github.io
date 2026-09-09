@@ -16,7 +16,7 @@
 
 | פרויקט | ממצא בקוד | מה נדרש להמשך |
 | --- | --- | --- |
-| HelpDesk-proj-react | ממשק React פונה ל־localhost:4000; אין שרת במאגר | קוד השרת או כתובת שרת קיימת, מסד נתונים, והתאמת כתובת API וניתוב |
+| HelpDesk-proj-react + HelpDesk-react-server | בעלת האתר סיפקה את שרת Express/TypeScript/SQLite ובחרה דמו חינמי עם נתונים זמניים. הוכנו ונבדקו חיבור API, חשבונות דמו, גיבוב סיסמאות ו־render.yaml לשני השירותים | הפעלת ה־Blueprint בחשבון Render; לאחר קבלת כתובת אמיתית ובדיקתה ניתן להוסיף קישור לייב לפורטפוליו |
 | Direct_Insurance_Hackathon | שני לקוחות React, שרת Express/Socket.io ושירות FastAPI; הלקוחות פונים לשרת מקומי | חשבון אירוח שרתים, MongoDB, Cloudinary והגדרת מפתחות Gemini/Claude בצד השרת; התאמת הלקוחות לכתובות הענן |
 | agentic-coding-rag | ממשק Gradio ב־Python עם Cohere ו־Pinecone | אירוח Python, מפתחות שירות, אינדקס וקטורי מוכן והגדרת האזנה לענן |
 | cli-agent | ממשק Gradio שמייצר טקסט של פקודות, מאזין ל־127.0.0.1:7860 ודורש GEMINI_API_KEY | אירוח Python, מפתח Gemini והגדרת האזנה לענן; בניגוד למיפוי הראשוני, אין צורך לבנות ממשק חדש ולא נמצאה הרצת פקודות במימוש שנבדק |
